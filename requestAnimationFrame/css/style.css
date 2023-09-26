@@ -1,0 +1,7 @@
+.requestAnimationFrameBar,
+.setIntervaloutBar {
+  background-color: green;
+  width: 10px;
+  height: 20px;
+  margin: 5px 0;
+}
