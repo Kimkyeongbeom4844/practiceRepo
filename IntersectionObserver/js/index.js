@@ -14,10 +14,10 @@
       </div>
     `;
   }
-  console.log($wrap.children);
   const observer = new IntersectionObserver(
     (elem) => {
       for (let i = 0; i < elem.length; i++) {
+        console.log(elem[i]);
         if (elem[i].isIntersecting) {
           elem[i].target.classList.remove("hidden");
         } else {
