@@ -9,7 +9,7 @@ const fetchRequest = () => {
   fetchController = new AbortController();
   setTimeout(async () => {
     try {
-      const res = await fetch("./src/sample.json", {
+      const res = await fetch("./src/data.json", {
         signal: fetchController.signal,
       });
       const data = await res.json();
@@ -32,7 +32,7 @@ const axiosRequest = (e) => {
   axiosController = new AbortController();
   setTimeout(async () => {
     try {
-      const { data } = await axios.get("./src/sample.json", {
+      const { data } = await axios.get("./src/data.json", {
         signal: axiosController.signal,
       });
       console.log(data);
